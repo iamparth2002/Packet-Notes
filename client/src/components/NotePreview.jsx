@@ -6,7 +6,7 @@ const NotePreview = ({ data, selected , setSelected }) => {
     <div
       className={`rounded-2xl ${
         selected?._id == data._id && "bg-darkslategray-200"
-      } cursor-pointer flex flex-row items-start justify-start pt-[15px] px-[37px] pb-[14.1px] box-border gap-[30px] max-w-full z-[2] text-left text-5xl text-white font-roboto mq450:flex-wrap `}
+      } cursor-pointer flex flex-row items-start justify-start pt-[15px] px-[37px] pb-[14.1px] box-border gap-[30px] w-[435px] z-[2] text-left text-5xl text-white font-roboto mq450:flex-wrap `}
       onClick={()=>setSelected(data)}
     >
       <div className="h-[98px] w-[434px] relative rounded-2xl bg-darkslategray-200 hidden max-w-full" />

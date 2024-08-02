@@ -65,12 +65,12 @@ const Sidenav = ({ data, selected, setSelected }) => {
     fetchGroups();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className='flex justify-center items-center h-screen md:w-[420px]'>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
 
   return (
-    <div className="h-screen md:h-[982px] w-[420px] top-[0px] left-[0px]">
+    <div className="h-screen md:h-[982px] w-[420px] top-[0px] left-[0px]overflow-y-hidden">
       <h2 className="m-0 ml-[44px] pt-10 pb-4 md:absolute md:p-0 text-[44px] md:top-[50px] md:left-[45px] md:text-[35px] tracking-[0.02em] font-[inherit]  mq975:text-[28px] font-semibold ">
         Pocket Notes
       </h2>
@@ -89,7 +89,7 @@ const Sidenav = ({ data, selected, setSelected }) => {
         <DialogTrigger asChild>
           <div
             className="absolute z-50 top-[600px] right-[10px] rounded-[50%] md:top-[850px] md:left-[300px] w-[93px] h-[93px] text-[70px] text-white cursor-pointer 
-          hover:animate-spin"
+          "
           >
             <div className="absolute top-[0px] left-[0px] rounded-[50%] bg-darkblue w-full h-full" />
             <h1 className="m-0 absolute mq450:top-[22px] mq450:left-[34px] top-[12px] left-[27px] text-inherit tracking-[0.02em] leading-[97.69%] font-medium font-[inherit] z-[1] mq450:text-[42px] mq450:leading-[41px] mq975:text-[56px] mq975:leading-[55px]">

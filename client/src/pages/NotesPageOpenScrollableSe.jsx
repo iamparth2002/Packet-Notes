@@ -30,7 +30,7 @@ const NotesPageOpenScrollableSe = () => {
   }, [selected]);
 
   return (
-    <div className="w-full h-full bg-white overflow-hidden leading-[normal] tracking-[normal] text-left text-5xl text-black font-roboto max-h-[1100px]">
+    <div className="w-full h-full bg-white overflow-x-clip leading-[normal] tracking-[normal] text-left text-5xl text-black font-roboto max-h-[1100px]">
       {/* Desktop view */}
       <div className="hidden md:flex">
         {/* Sidebar */}

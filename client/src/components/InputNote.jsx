@@ -19,7 +19,7 @@ const InputNote = ({ selected, fetchNotes }) => {
   };
 
   return (
-    <div className="md:absolute md:top-[727px] md:left-[435px] md:w-[1090px] md:h-[255px] z-[3] bg-midnightblue p-4 md:p-0 max-w-md:flex  md:justify-center ">
+    <div className="md:absolute md:top-[727px] md:left-[435px] md:w-[1089px] md:h-[255px] z-[3] bg-midnightblue p-4 md:p-0 max-w-md:flex  md:justify-center ">
       <div className="md:relative  md:top-8 md:left-10 rounded-4xs bg-white border-lightgray border-[1px] border-solid box-border md:w-[1016px] flex items-start justify-start pt-[15px] pb-[22px] pl-[29px] pr-[55px] md:gap-[106px] md:max-w-full z-[4] text-[29.8px] text-darkgray">
         <div className="md:w-[1016px] md:h-[213px] md:relative rounded-4xs bg-white border-lightgray border-[1px] border-solid box-border hidden md:max-w-full p-2" />
         <textarea
